@@ -1,0 +1,44 @@
+{
+  "name": "move-predict",
+  "version": "1.0.0",
+  "description": "Token Price Prediction Service",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec node --loader ts-node/esm src/index.ts",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "blockchain",
+    "prediction",
+    "move"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "^1.35.0",
+    "axios": "^1.8.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^7.1.0",
+    "move-agent-kit": "^0.2.0",
+    "rate-limiter-flexible": "^5.0.5",
+    "winston": "^3.17.0",
+    "@langchain/anthropic": "^0.3.11",
+		"@langchain/core": "^0.3.30",
+		"@langchain/langgraph": "^0.2.40",
+		"agent-twitter-client": "^0.0.18",
+    "zod": "^3.24.2",
+		"zod-to-json-schema": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.13.9",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
