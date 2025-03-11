@@ -37,6 +37,10 @@ app.post('/', async (req, res) => {
   }
 });
 
+app.get("/", async (req, res) =>{
+  res.json("Hellp MoveAgent")
+})
+
 // Start the server
 app.listen(port, () => {
   console.log(`Agent API running on http://localhost:${port}`);
