@@ -11,7 +11,9 @@ const port = 3000;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: '*'
+}));
 
 // POST endpoint with body parsing
 app.post('/', async (req, res) => {
